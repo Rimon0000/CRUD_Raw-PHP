@@ -85,6 +85,7 @@ public function store(){
     $stmt->bindParam('pictures', $picture);
 
     $result = $stmt->execute();
+    
 
     if($result){
         $_SESSION['message'] = "Banner is added successfully.";
